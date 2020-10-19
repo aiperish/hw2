@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setMinusOperator()
+        setPlusOperator()
     }
     private fun calculate() {
         summarize.setOnClickListener{
@@ -39,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun plusMinusOperator() {
+    private fun setPlusOperator() {
         plus_button.setOnClickListener {
             isMinus = false
 
